@@ -1,0 +1,148 @@
+/*=================================================CONTACT===========================================================*/
+
+body{
+    letter-spacing: 1px;
+    line-height: 16px;
+
+}
+.contact{
+    @extend .header;
+    background: #e7e5d0;
+    min-height: 900px;
+    height: 100%;
+}
+.wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+ 
+}
+.map{
+      max-width: 1500px;
+    margin: 0 auto;
+    height: 800px;
+}
+.contact-text{
+    top:182px;
+   
+    &__title{
+        @extend .main-title;
+        margin-top: 0;
+    }
+    &__hours{
+        font-size: 13pt;
+         text-align: left;
+    }
+    &__info{
+         text-align: left;
+    }
+    h3{
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    &__subtitle{
+        margin: 80px 0px;
+    }
+    &__icons{
+        @extend .team-title__icons;
+        margin-top: 23%;
+    }
+}
+.contact-form{
+   @extend .contact-text;
+    text-align: right;
+    input{
+        display: inline-block;
+      
+        max-width: 470px;
+        background: #e7e5d0;
+        border:1px solid black;
+        height: 58px;
+        width: 98%;
+        margin-top: 60px;
+        &:first-of-type{
+            margin-top: 0;
+        }
+        &:nth-child(3){
+            height: 220px;
+        }
+       
+        
+    }
+ input.contact-form__button{
+        margin-top: 23px;
+        text-align: center;
+        background: rgb(154, 151, 122) none repeat scroll 0% 0%;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        max-width: 470px;
+        width: 100%;
+        display: inline-block;
+         border:none;
+    }    
+    
+    
+   
+}
+@media screen and (max-width:890px){
+    span{
+        display: none;
+    }
+    .contact-form{
+        text-align: center;
+        &:last-of-type{
+            height: 100px;
+        }
+    }
+    .contact-form input{
+       
+    }
+    .contact-text__icons{
+        margin-top: 10%;
+    }
+    .contact-text{
+        top:22px;
+         &__subtitle{
+            margin: 5px 0;
+        }
+    }
+    .contact-form input:nth-child(3){
+        height: 100px;
+    }
+    .contact-text__info, .contact-text__hours{
+        text-align: center;
+    }
+     .map{
+        height: 500px;
+    }
+}
+@media screen and (max-width:560px){
+    .contact-form{
+        text-align: center;
+    }
+    .contact-text{
+        top:22px;
+        font-size: 8pt;
+        &__hours{
+            font-size: 8pt;
+        }
+        &__subtitle{
+            margin: 5px 0;
+        }
+    }
+   
+    span{
+        display: none;
+    }
+    .main-title, .gallery-main__title, .contact-text__title{
+        font-size: 20pt;
+    }
+    .contact-text__info, .contact-text__hours{
+        text-align: center;
+    }
+    .map{
+        height: 300px;
+    }
+    
+}
+/*=============================================== END OF CONTACT===========================================================*/

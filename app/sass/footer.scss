@@ -1,0 +1,28 @@
+.footer{
+    height: 500px;
+    max-width: 1500px;
+    background: #aeaeae;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -3px;
+    
+    
+}
+.footer-img{
+    display: inline-block;
+    margin-top: 12%;
+    img{
+        
+    width: 260px;
+    height: 140px;
+    }
+}
+.footer-text{
+    margin-top: 9%;
+}
+
+@media screen and (max-width:890px){
+    .footer{
+        height: 100%;
+    }
+}

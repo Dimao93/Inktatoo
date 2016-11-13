@@ -1,0 +1,57 @@
+.gallery{
+    max-width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+.gallery-img{
+    img{
+        width: 100%;
+        height: 230px;
+    }
+      &:hover .image-hover{
+        display: block;
+    }
+    
+}
+.gallery-main{
+    background:#afac9c;
+    text-align: center;
+    height: 230px;
+    &__title{
+        @extend .main-title;
+        margin-top: 18%;
+    }
+}
+.gallery-img{
+.image-hover{
+    position: absolute;
+    background: rgba(190,184,164,0.7);
+    width: 100%;
+    z-index: 2;
+    height: 99.4%;
+    left: 0;
+    top:0;
+   display:none;
+   
+    img{
+        height: 25px;
+        width: auto;
+        position: relative;
+        top: 62.5%;
+        left: 14%;
+        cursor: pointer;
+      
+    }
+    .image-search{
+        top: 26%;
+        left: 40%;
+    }
+    
+}
+}
+@media screen and (max-width:860px){
+    .gallery-img .image-hover .image-search{
+        left:0;
+    }
+}

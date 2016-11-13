@@ -1,0 +1,135 @@
+/*============================HEADER==========================*/
+
+
+.header{
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 500px;
+    background: url(../img/header_bcg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.header-logo{
+    display: inline-block;
+    margin: 30px 55px 0;
+}
+.logo-image{
+    width: 260px;
+    height: 140px;
+}
+.header-menu{
+    display: inline-block;
+    position: relative;
+    top: -68px;
+}
+.header-menu__item{
+    display: inline-block;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12pt;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    &:hover{
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+    }
+}
+.left .header-menu__item{
+    margin-right: 30px;
+    &:last-of-type{
+        margin: 0;
+    }
+}
+.right .header-menu__item{
+      margin-right: 30px;
+    &:last-of-type{
+        margin: 0;
+    }
+}
+.menu-button{
+        border: 1px solid;
+        border-radius: 5px;
+        width: 95px;
+        margin: 0 auto;
+        padding: 5px;
+        cursor: pointer;
+        position: relative;
+        top: 10px;
+        display: none;
+}
+
+/*=======================HEADER MEDIQ===========================*/
+
+@media screen and (max-width:890px){
+    .left .header-menu__item{
+        display: block;
+        margin-top:20px;
+        margin-right: 0;
+        &:last-of-type{
+            margin-top: 20px;
+        }
+        
+    }
+    .right .header-menu__item{
+        display: block;
+        margin-top:20px;
+        margin-right: 0;
+        &:last-of-type{
+            margin-top: 20px;
+        }
+        
+    }
+}
+@media screen and (max-width:560px){
+    .header-logo{
+        margin: 0;
+        margin-top: 20px;
+        display: block;
+        img{
+            margin: 0 auto;
+        }
+    }
+    .header-menu{
+        top:0;
+        display: none;
+      
+      
+       
+    }
+    .left .header-menu {
+        display: block; 
+    }
+   
+    .right .header-menu {
+        display: block;
+    }
+    .logo-image{
+        height: 70px;
+        width: 130px;
+        display: block;
+    }
+    .header-menu__item{
+         &:hover{
+            border: none;
+             padding: 0;
+             font-weight: 700;
+        }
+
+    }
+    .menu-button{
+        display: block;
+        &:hover{
+            font-weight: 700;
+        }
+    }
+    .header{
+        height: 335px;
+    }
+}
+
+

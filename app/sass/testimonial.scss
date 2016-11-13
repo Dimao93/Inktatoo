@@ -1,0 +1,45 @@
+.testimonial{
+    @extend .header;
+    height: auto;
+    max-height: 350px;
+    background: url(../img/testimonial-bcg.png) no-repeat;
+    background-size: cover;
+    color: white;
+    font-style: italic;
+    background-attachment: fixed;
+    
+}
+.row{
+        margin: 0 auto;
+    }
+.testimonial-text{
+    max-width: 855px;
+    margin: 11% auto;
+    span{
+        font-size: 60pt;
+    }
+    .author{
+        font-size: 16pt;
+        display: block;
+        float: right;
+    }
+    p{
+        display: inline-block;
+        max-width: 740px;
+        font-size: 16pt;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width:560px){
+    .testimonial-text{
+        span{
+            width: 30pt;
+        }
+        .author{
+            font-size: 8pt;
+        }
+        p{
+            font-size: 8pt;
+        }
+    }   
+}

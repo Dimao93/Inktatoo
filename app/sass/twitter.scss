@@ -1,0 +1,23 @@
+.twitter{
+    @extend .testimonial;
+    background: url(../img/twitter-bcg.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.twitter-text{
+    max-width: 909px;
+    margin: 35px auto 125px;
+    font-size: 16pt;
+}
+.twitter-img{
+    margin-top: 110px;
+    .fa:hover{
+        color: white;
+    }
+}
+@media screen and (max-width:560px){
+    .twitter-text{
+        font-size: 8pt;
+    }
+    
+}
